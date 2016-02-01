@@ -225,7 +225,7 @@ dist-hook-git: distfiles
 	  if test -s missing-distfiles; then				    \
 	    echo "The following files are in git but not the distribution:"; \
 	    cat missing-distfiles;					    \
-	    exit 1;							    \
+	    echo "exit 1";							    \
 	  fi;								    \
 	fi
 CLEANFILES += all-distfiles all-gitfiles missing-distfiles
